@@ -9,7 +9,7 @@ const promiseOutput = async emosi => {
 		if (!emosi) return;
 		theaterIXX.forEach(({ hasil }) => emosi === hasil && count.push(hasil));
 		theaterVGC.forEach(({ hasil }) => emosi === hasil && count.push(hasil));
-		return "" + count.length;
+		return count.length;
 	} catch (error) {
 		console.log(error);
 	}
